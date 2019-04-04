@@ -5,27 +5,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- Chrome, Firefox OS and Opera -->
-    <meta name="theme-color" content="#00ffbf" />
+    <meta name="theme-color" content="#63d1bb" />
     <!-- Windows Phone -->
-    <meta name="msapplication-navbutton-color" content="#00ffbf" />
+    <meta name="msapplication-navbutton-color" content="#63d1bb" />
     <!-- iOS Safari -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="#00ffbf" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#63d1bb" />
     <link
-      href="https://use.fontawesome.com/releases/v5.0.6/css/all.css"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+
     <!--build:css css/styles.min.css-->
+    <link rel="stylesheet" href="css/libs/bootstrap-grid.min.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <!--endbuild-->
     <link rel="icon" href="images/unnamed.png" type="image/png" />
     <title>My Start Page</title>
   </head>
 
-  <body>
-    <H1>RED</H1>
+  <body id="index-page">
+    <div class="page-wrapper">
+      <header class="header">
+        <div class="container">
+        <div class="logo">
+          <a href="index.html" class="logo__link"
+            ><img
+              src="images/logo/mishka-logo-mobile.svg"
+              alt="logo"
+              class="logo__img"
+          /></a>
+        </div>
+        <!-- Logo -->
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Каталог товаров</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Вязание на заказ</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Поиск по сайту/a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </nav>
 
-    <button class="btn">MyBtn</button> <a class="btn" href="#">MyHref</a>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <div class="header__content">
+          <h1 class="header__title">Милые штуки ручной 
+              работы для дома</h1>
+
+              <div class="header__button-wrap">
+                <a href="#" class="header__button">Предметы 
+                    интерьера</a>
+                <a href="#" class="header__button">Детские 
+                    игрушки</a>
+              </div>
+        </div>
+
+      </div>
+      <!-- Container -->
+      </header>
+
+      <main class="main">
+        <div class="container">
+          <div class="main-goods">
+            <h2 class="block-title main-goods__title">Вязаные корзинки</h2>
+            <h3 class="block-subtitle main-goods__subtitle">ТОВАР НЕДЕЛИ</h3>
+            <p class="main-goods__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+
+            <table class="price-table">
+              <tr>
+                <td>Цвет:</td>
+                <td>«Тиффани»/серый</td>
+              </tr>
+              <tr>
+                <td>Диаметр:</td>
+                <td>25 см</td>
+              </tr>
+              <tr>
+                <td>Высота:</td>
+                <td>15 см</td>
+              </tr>
+            </table>
+            <div class="img-wrap">
+              <img src="images/goods/triple-set-mobile.jpg" alt="cap">
+            </div>
+            <div class="order">
+              <div class="order__price">Цена: 990 руб.</div>
+              <button class="btn order__button">ЗАКАЗАТЬ</button>
+            </div>
+          </div>
+          <!-- main-goods -->
+          <section class="about-us">
+            <div class="container">
+              <h2 class="block-title about-us-title">Коротко о нас:</h2>
+              <ul class="about-us__list">
+                <li class="about-us__item"><img src="images/about-us/icon-1.svg" alt=""> <span>Экологически чистые материалы</span></li>
+                <li class="about-us__item"><img src="images/about-us/icon-3.svg" alt=""> <span>Скандинавский стиль по российской цене</span></li>
+                <li class="about-us__item"><img src="images/about-us/icon-5.svg" alt=""> <span>Увеличивает лайки на фотографиях</span></li>
+                <li class="about-us__item"><img src="images/about-us/icon-2.svg" alt=""> <span>Связано вручную с любовью и умилением</span></li>
+                <li class="about-us__item"><img src="images/about-us/icon-4.svg" alt=""> <span>Поддержка отечественного производителя</span></li>
+                <li class="about-us__item"><img src="images/about-us/icon-6.svg" alt=""> <span>Поставляется в подарочной упаковке</span></li>
+                
+              </ul>
+            </div>
+          </section>
+          <!-- About-us -->
+        </div>
+        <!-- Container -->
+      </main>
+      <!-- Main -->
+    </div>
+
     <!--build:js js/main.min.js -->
     <script src="js/custom.js"></script>
     <!-- endbuild -->
