@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#63d1bb" />
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#63d1bb" />
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#63d1bb" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+
+    <!--build:css css/styles.min.css-->
+    <link rel="stylesheet" href="css/libs/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!--endbuild-->
+    <link rel="icon" href="images/unnamed.png" type="image/png" />
+    <title>My Start Page</title>
+  </head>
+
+  <body id="index-page">
+    <div class="page-wrapper">
+      <header class="header">
+        <div class="container">
+        <div class="logo">
+          <a href="index.html" class="logo__link"
+            ><img
+              src="images/logo/mishka-logo-mobile.svg"
+              alt="logo"
+              class="logo__img"
+          /></a>
+        </div>
+        <!-- Logo -->
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Каталог товаров</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Вязание на заказ</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Поиск по сайту/a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__content">
+          <h1 class="header__title">Каталог товаров</h1>
+
+              <div class="header__button-wrap">
+                <a href="#" class="header__button">Предметы 
+                    интерьера</a>
+                <a href="#" class="header__button">Детские 
+                    игрушки</a>
+              </div> 
+        </div>
+
+      </div>
+      <!-- Container -->
+      </header>
+
+      <section class="catalog">
+          <div class="container">
+          <div class="catalog__item">
+              <div class="catalog__img-wrap">
+                  <picture>
+                      <source media="(min-width: 1150px)" srcset="images/catalog/photo-1-desktop.jpg">
+                      <source media="(min-width: 768px)" srcset="images/catalog/photo-1-tablet.jpg">
+                      <source media="(min-width: 320px)" srcset="images/catalog/photo-1-mobile.jpg">
+                        <img class="catalog__img" src="images/catalog/photo-1-desktop.jpg" alt="Мишка">
+                  </picture>
+              </div>
+              <!-- catalog__img-wrap -->
+              <div class="catalog__data">
+                  <h3 class="catalog__goods-name">Зайчик-попрыгайчик</h3>
+                  <div class="catalog__goods-size">Рост 30 см, вес 200 г</div>
+                  <div class="catalog__price"><p class="sum">1 200 руб.</p> <button class="btn btn--buy"><img src="images/btn/cart.svg" alt=""></button></div>
+              </div>
+              <!-- Catalog__data -->
+          </div>
+          <!-- Catalog Item -->
+          <div class="catalog__item">
+                <div class="catalog__img-wrap">
+                    <picture>
+                        <source media="(min-width: 1150px)" srcset="images/catalog/photo-2-desktop.jpg">
+                        <source media="(min-width: 768px)" srcset="images/catalog/photo-2-tablet.jpg">
+                        <source media="(min-width: 320px)" srcset="images/catalog/photo-2-mobile.jpg">
+                          <img class="catalog__img" src="images/catalog/photo-2-desktop.jpg" alt="Мишка">
+                    </picture>
+                </div>
+                <!-- catalog__img-wrap -->
+                <div class="catalog__data">
+                    <h3 class="catalog__goods-name">Корзинка для белья</h3>
+                    <div class="catalog__goods-size">Диаметр 15 см, высота 10 см</div>
+                    <div class="catalog__price"><p class="sum">690 руб.</p> <button class="btn btn--buy"><img src="images/btn/cart.svg" alt=""></button></div>
+                </div>
+                <!-- Catalog__data -->
+            </div>
+            <!-- Catalog Item -->
+            <div class="catalog__item">
+                    <div class="catalog__img-wrap">
+                        <picture>
+                            <source media="(min-width: 1150px)" srcset="images/catalog/photo-3-desktop.jpg">
+                            <source media="(min-width: 768px)" srcset="images/catalog/photo-3-tablet.jpg">
+                            <source media="(min-width: 320px)" srcset="images/catalog/photo-3-mobile.jpg">
+                              <img class="catalog__img" src="images/catalog/photo-3-desktop.jpg" alt="Мишка">
+                        </picture>
+                    </div>
+                    <!-- catalog__img-wrap -->
+                    <div class="catalog__data">
+                        <h3 class="catalog__goods-name">Большая корзинка для игрушек</h3>
+                        <div class="catalog__goods-size">Диаметр 30 см, высота 30 см</div>
+                        <div class="catalog__price"><p class="sum">1500 руб.</p> <button class="btn btn--buy"><img src="images/btn/cart.svg" alt=""></button></div>
+                    </div>
+                    <!-- Catalog__data -->
+                </div>
+                <!-- Catalog Item -->
+        </div>
+        <!-- Container -->
+      </section>
+      <!-- Catalog -->
+
+      <section class="video">
+          <div class="container">
+              <h2 class="block-title">Процесс производства</h2>
+              <video src="" poster="images/video/video-desktop.jpg"></video>
+
+              <div class="video__content">
+                  <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+                  <button class="btn">Сделать заказ</button>
+              </div>
+          </div>
+      </section>
+      <!-- Video -->
+
+      <footer class="footer">
+        <div class="container">
+          <div class="logo logo--footer"><img src="images/logo/logo-footer.svg" alt=""></div>
+          <ul class="social">
+            <li class="social__item"><a class="social__link" href="#"><img src="images/social/insta.svg" alt=""></a></li>
+            <li class="social__item"><a class="social__link" href="#"><img src="images/social/fb.svg" alt=""></a></li>
+            <li class="social__item"><a class="social__link" href="#"><img src="images/social/twitter.svg" alt=""></a></li>
+          </ul>
+
+          <div class="copyright">
+            <p class="copyright__text">Разработано</p>
+            <img src="images/copyright/htmlacademy.svg" alt="Html Academy">
+          </div>
+        </div>
+        <!-- Container -->
+      </footer>
+      <!-- Footer -->
+    </div>
+
+    <!--build:js js/main.min.js -->
+    <script src="js/custom.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
