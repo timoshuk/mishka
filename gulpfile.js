@@ -46,8 +46,8 @@ gulp.task("css", function() {
   return gulp
     .src(paths.scss) // Gets all files ending with .scss in app/scss
     .pipe(wait(500))
-    .pipe(plumber())
     .pipe(sass())
+    .pipe(plumber())
     .pipe(sourcemaps.init())
     .pipe(postcss([autoprefixer()]))
     .pipe(sourcemaps.write("."))
