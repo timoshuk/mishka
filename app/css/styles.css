@@ -319,6 +319,11 @@ body {
   font-size: 1.5rem;
   font-weight: normal; }
 
+h1 {
+  font-size: 2.7rem;
+  font-weight: bold;
+  line-height: 1.11; }
+
 .page-wrapper {
   position: relative;
   width: 100%;
@@ -341,7 +346,7 @@ body {
     padding-right: 50px; } }
 
 .header {
-  padding-top: 90px; }
+  padding-top: 70px; }
 
 .header__top {
   border-bottom: 1px solid #ececec;
@@ -354,6 +359,14 @@ body {
   left: 0;
   width: 100%;
   height: 90px; }
+
+.header__content {
+  min-height: 300px;
+  background: url(../images/header/hero-mobile.jpg) no-repeat top/cover;
+  padding-top: 75px; }
+
+.header__title {
+  text-align: center; }
 
 .logo {
   text-align: center; }
