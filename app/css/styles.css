@@ -415,4 +415,7 @@ body {
   .main-nav__link:active {
     color: #bdbdbd; }
 
+.main-nav__svg {
+  fill: red; }
+
 /*# sourceMappingURL=styles.css.map */
