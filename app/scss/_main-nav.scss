@@ -1,10 +1,9 @@
 .main-nav {
   position: fixed;
-  top: 85px;
+  top: 90px;
   left: 0px;
   width: 100%;
   height: auto;
-  text-align: center;
 }
 
 .main-nav__btn {
@@ -39,24 +38,51 @@
 }
 
 .main-nav__list {
-  z-index: 9999;
+  display: none;
+  opacity: 0;
+  height: 0px;
+  overflow: hidden;
   list-style: none;
   background: #fff;
 }
 
+.main-nav__list.main-nav__list--show {
+  animation: hide-menu 0.4s linear forwards;
+  display: block;
+}
+
+@keyframes hide-menu {
+  0% {
+    height: 0px;
+    opacity: 0;
+  }
+
+  100% {
+    height: auto;
+    opacity: 1;
+  }
+}
+
 .main-nav__item {
+  position: relative;
   padding: 30px;
   border-bottom: 1px solid #ececec;
+  height: 80px;
 }
 
 .main-nav__link {
   display: block;
-  position: relarive;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   text-decoration: none;
+  text-align: center;
+  line-height: 80px;
   color: #000;
   font-size: 1.7rem;
   font-weight: 600;
-  line-height: 1.4;
   transition: all 0.3s;
 
   &:hover,
@@ -69,3 +95,44 @@
   }
 }
 
+.main-nav__link--search {
+  &::before {
+    content: "";
+    position: absolute;
+    left: 30px;
+    top: 0px;
+    bottom: 0px;
+    width: 20px;
+    background: url(../images/main-nav/search.svg) no-repeat center/contain;
+    filter: grayscale(100%);
+  }
+}
+
+.main-nav__link--bucket {
+  &::before {
+    content: "";
+    position: absolute;
+    left: 30px;
+    top: 0px;
+    bottom: 0px;
+    width: 20px;
+    background: url(../images/main-nav/cart.svg) no-repeat center/contain;
+    filter: grayscale(100%);
+  }
+}
+
+.main-nav__link--search:hover,
+.main-nav__link--bucket:hover,
+.main-nav__link--search:focus,
+.main-nav__link--bucket:focus {
+  &::before {
+    filter: grayscale(0%);
+  }
+}
+
+.main-nav__link--search:active,
+.main-nav__link--bucket:active {
+  &::before {
+    opacity: 0.5;
+  }
+}
