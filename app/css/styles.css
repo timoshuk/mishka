@@ -396,6 +396,7 @@ body {
           transform: rotate(-405deg) translate(4px, -4px); }
 
 .main-nav__list {
+  z-index: 9999;
   list-style: none;
   background: #fff; }
 
@@ -404,6 +405,8 @@ body {
   border-bottom: 1px solid #ececec; }
 
 .main-nav__link {
+  display: block;
+  position: relarive;
   text-decoration: none;
   color: #000;
   font-size: 1.7rem;
@@ -414,8 +417,5 @@ body {
     color: #9f9f9f; }
   .main-nav__link:active {
     color: #bdbdbd; }
-
-.main-nav__svg {
-  fill: red; }
 
 /*# sourceMappingURL=styles.css.map */

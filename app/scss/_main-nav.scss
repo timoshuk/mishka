@@ -39,6 +39,7 @@
 }
 
 .main-nav__list {
+  z-index: 9999;
   list-style: none;
   background: #fff;
 }
@@ -49,6 +50,8 @@
 }
 
 .main-nav__link {
+  display: block;
+  position: relarive;
   text-decoration: none;
   color: #000;
   font-size: 1.7rem;
@@ -66,6 +69,3 @@
   }
 }
 
-.main-nav__svg {
-  fill: red;
-}
