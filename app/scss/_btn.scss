@@ -1,0 +1,27 @@
+.btn {
+  font-family: "Open Sans", sans-serif;
+  display: block;
+  outline: none;
+  background: transparent;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 1.7rem;
+  line-height: 1.2;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #5d5d5d;
+  border: 2px solid #444;
+  width: 100%;
+  transition: all 0.4s ease-in-out;
+
+  &:hover,
+  &:focus {
+    color: #fff;
+    background: #444;
+  }
+
+  &:active {
+    color: #7c7c7c;
+  }
+}

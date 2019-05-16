@@ -317,7 +317,9 @@ html {
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 1.5rem;
-  font-weight: normal; }
+  line-height: 1.6;
+  font-weight: normal;
+  color: #444; }
 
 h1 {
   font-size: 2.7rem;
@@ -586,18 +588,82 @@ h1 {
 .contacts {
   overflow: hidden; }
 
-.main-goods {
+.goods {
   padding-top: 35px;
-  padding-bottom: 35px; }
+  padding-bottom: 35px;
+  background: url(../images/goods/zigzag-line-desktop.svg);
+  background-repeat: repeat-x;
+  background-position: bottom; }
 
-.main-goods__titles {
+.goods__titles {
   margin-bottom: 30px; }
 
-.main-goods__description {
+.goods__description {
+  text-align: left;
   font-family: "Open Sans", sans-serif;
   color: #444;
   font-size: 1.5rem;
   line-height: 1.6;
-  font-weight: normal; }
+  font-weight: normal;
+  margin-bottom: 35px; }
+
+.price-table {
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  width: 100%;
+  text-align: left; }
+  .price-table .price-table__row {
+    border-bottom: 1px solid #ececec; }
+    .price-table .price-table__row td {
+      padding-top: 15px;
+      padding-bottom: 10px; }
+
+.order {
+  position: relative;
+  text-align: center; }
+
+.order__img-wrap {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+  margin-bottom: 30px; }
+  .order__img-wrap img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+
+.order__price {
+  font-size: 1.7rem;
+  line-height: 1.4;
+  font-weight: bold;
+  color: #444;
+  margin-bottom: 28px; }
+
+.btn {
+  font-family: "Open Sans", sans-serif;
+  display: block;
+  outline: none;
+  background: transparent;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 1.7rem;
+  line-height: 1.2;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #5d5d5d;
+  border: 2px solid #444;
+  width: 100%;
+  transition: all 0.4s ease-in-out; }
+  .btn:hover, .btn:focus {
+    color: #fff;
+    background: #444; }
+  .btn:active {
+    color: #7c7c7c; }
 
 /*# sourceMappingURL=styles.css.map */

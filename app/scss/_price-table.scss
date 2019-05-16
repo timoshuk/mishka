@@ -1,0 +1,15 @@
+.price-table {
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  width: 100%;
+  text-align: left;
+
+  & .price-table__row {
+    border-bottom: 1px solid #ececec;
+
+    & td {
+      padding-top: 15px;
+      padding-bottom: 10px;
+    }
+  }
+}
