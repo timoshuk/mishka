@@ -345,6 +345,22 @@ h1 {
     padding-left: 50px;
     padding-right: 50px; } }
 
+.block-title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 0.6em;
+  color: #000; }
+
+.block-subtitle {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  color: #63d1bb;
+  font-size: 1.7rem;
+  line-height: 1.2;
+  text-transform: uppercase; }
+
 .header {
   padding-top: 90px; }
 
@@ -569,5 +585,19 @@ h1 {
 
 .contacts {
   overflow: hidden; }
+
+.main-goods {
+  padding-top: 35px;
+  padding-bottom: 35px; }
+
+.main-goods__titles {
+  margin-bottom: 30px; }
+
+.main-goods__description {
+  font-family: "Open Sans", sans-serif;
+  color: #444;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  font-weight: normal; }
 
 /*# sourceMappingURL=styles.css.map */
