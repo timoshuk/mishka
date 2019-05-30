@@ -668,7 +668,8 @@ h1 {
     color: #7c7c7c; }
 
 .about-us__list {
-  list-style: none; }
+  list-style: none;
+  margin-bottom: 60px; }
 
 .about-us__item {
   margin-bottom: 30px;
@@ -686,5 +687,20 @@ h1 {
   font-size: 1.7rem;
   line-height: 1.18;
   font-weight: bold; }
+
+.response__list {
+  list-style: none; }
+
+.response__item {
+  display: none;
+  margin-bottom: 40px; }
+  .response__item.response__item--active {
+    display: block; }
+
+.response__item .txt {
+  font-size: 1.5rem;
+  line-height: 2em;
+  font-weight: 500;
+  margin-bottom: 70px; }
 
 /*# sourceMappingURL=styles.css.map */
