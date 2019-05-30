@@ -688,6 +688,13 @@ h1 {
   line-height: 1.18;
   font-weight: bold; }
 
+.response {
+  padding-bottom: 45px;
+  margin-bottom: 40px;
+  background: url(../images/goods/zigzag-line-desktop.svg);
+  background-repeat: repeat-x;
+  background-position: bottom; }
+
 .response__list {
   list-style: none; }
 
@@ -702,5 +709,20 @@ h1 {
   line-height: 2em;
   font-weight: 500;
   margin-bottom: 70px; }
+
+.response__buttons {
+  display: flex;
+  margin-bottom: 35px;
+  justify-content: space-between; }
+  .response__buttons .btn {
+    border: 1px solid #ececec; }
+    .response__buttons .btn:focus {
+      border: 1px solid #63d1bb; }
+    .response__buttons .btn:hover, .response__buttons .btn:focus {
+      background: transparent; }
+      .response__buttons .btn:hover svg, .response__buttons .btn:focus svg {
+        fill: #666; }
+    .response__buttons .btn:active svg {
+      fill: #b2b2b2; }
 
 /*# sourceMappingURL=styles.css.map */
