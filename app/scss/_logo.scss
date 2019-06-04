@@ -9,6 +9,16 @@
   height: auto;
   position: relative;
   overflow: hidden;
+  transition: all 0.3s;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
 }
 
 .logo__img {

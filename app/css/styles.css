@@ -457,7 +457,12 @@ h1 {
   height: 40px;
   height: auto;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  transition: all 0.3s; }
+  .logo__link:hover, .logo__link:focus {
+    opacity: 0.5; }
+  .logo__link:active {
+    opacity: 0.2; }
 
 .logo__img {
   width: 100%;

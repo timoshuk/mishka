@@ -29,11 +29,19 @@
           <div class="container">
             <div class="logo">
               <a href="index.html" class="logo__link"
-                ><img
+                >
+                <picture>
+                
+                  <source srcset="images/logo/mishka-logo-desktop.svg" media="(min-width: 1250px)" type="image/svg+xml">
+                  <source srcset="images/logo/mishka-logo-tablet.svg" media="(min-width: 768px)" type="image/svg+xml">
+                  <source srcset="images/logo/mishka-logo-mobile.svg" media="(min-width: 300px)" type="image/svg+xml">
+                  <img
                   src="images/logo/mishka-logo-mobile.svg"
                   alt="logo"
                   class="logo__img"
-              /></a>
+              />
+            </picture>
+            </a>
             </div>
             <!-- Logo -->
             <nav class="main-nav">
