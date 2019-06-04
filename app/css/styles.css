@@ -465,6 +465,9 @@ h1 {
   -o-object-fit: cover;
      object-fit: cover; }
 
+.logo--footer {
+  display: none; }
+
 .main-nav {
   position: fixed;
   top: 90px;
@@ -700,7 +703,7 @@ h1 {
   color: #5d5d5d;
   border: 2px solid #444;
   width: 100%;
-  transition: all 0.4s ease-in-out; }
+  transition: all 0.3s ease-in-out; }
   .btn:hover, .btn:focus {
     color: #fff;
     background: #444; }
@@ -764,5 +767,44 @@ h1 {
         fill: #666; }
     .response__buttons .btn:active svg {
       fill: #b2b2b2; }
+
+.footer {
+  position: relative;
+  width: 100%;
+  min-height: 160px;
+  background: #f1f1f1; }
+
+.social {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e5e5e5; }
+
+.social__item {
+  margin-right: 40px; }
+  .social__item .social__link {
+    display: block;
+    text-decoration: none;
+    padding: 5px; }
+    .social__item .social__link svg {
+      transition: all 0.3s; }
+    .social__item .social__link:hover svg,
+    .social__item .social__link:focus svg {
+      fill: #71cdbf;
+      cursor: pointer; }
+    .social__item .social__link:active {
+      opacity: 0.5; }
+
+.copyright {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center; }
+
+.copyright__text {
+  margin-right: 30px; }
 
 /*# sourceMappingURL=styles.css.map */
