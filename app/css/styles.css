@@ -616,10 +616,12 @@ h1 {
   .main-nav__list {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     opacity: 1;
     height: auto;
-    background: transparent; } }
+    background: transparent; }
+  .main-nav__item {
+    border-bottom: initial; } }
 
 .contacts {
   overflow: hidden;
