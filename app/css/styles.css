@@ -342,7 +342,7 @@ h1 {
   margin-right: auto;
   max-width: 1150px; }
 
-@media all and (min-width: 767px) {
+@media all and (min-width: 768px) {
   .container {
     padding-left: 50px;
     padding-right: 50px; } }
@@ -473,6 +473,17 @@ h1 {
 .logo--footer {
   display: none; }
 
+@media (min-width: 768px) {
+  .logo {
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
+  .logo__link {
+    width: 115px;
+    height: 50px; } }
+
 .main-nav {
   position: fixed;
   top: 90px;
@@ -592,6 +603,23 @@ h1 {
 .main-nav__link--search:active::before,
 .main-nav__link--bucket:active::before {
   opacity: 0.5; }
+
+@media (min-width: 768px) {
+  .main-nav {
+    position: relative;
+    top: initial;
+    left: initial;
+    width: 100%;
+    height: auto; }
+  .main-nav__btn {
+    display: none; }
+  .main-nav__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 1;
+    height: auto;
+    background: transparent; } }
 
 .contacts {
   overflow: hidden;

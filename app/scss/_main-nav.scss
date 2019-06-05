@@ -136,3 +136,25 @@
     opacity: 0.5;
   }
 }
+
+@media (min-width: 768px) {
+  .main-nav {
+    position: relative;
+    top: initial;
+    left: initial;
+    width: 100%;
+    height: auto;
+  }
+  .main-nav__btn {
+    display: none;
+  }
+
+  .main-nav__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 1;
+    height: auto;
+    background: transparent;
+  }
+}

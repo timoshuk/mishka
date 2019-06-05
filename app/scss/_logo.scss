@@ -30,3 +30,17 @@
 .logo--footer {
   display: none;
 }
+
+@media (min-width: 768px) {
+  .logo {
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .logo__link {
+    width: 115px;
+    height: 50px;
+  }
+}
