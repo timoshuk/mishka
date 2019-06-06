@@ -150,6 +150,7 @@
   }
 
   .main-nav__list {
+    overflow: visible;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -158,7 +159,34 @@
     background: transparent;
   }
 
+  .main-nav__list.main-nav__list--show {
+    animation: initial;
+    display: flex;
+  }
+
   .main-nav__item {
     border-bottom: initial;
+    flex-basis: 150px;
+    flex-grow: 1;
+  }
+
+  .main-nav__link.main-nav__link--bottom {
+    top: 80%;
+    font-size: 1.5rem;
+  }
+
+  .main-nav__link--search {
+    width: 83px;
+    font-size: 0px;
+    color: transparent;
+    border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+  }
+
+  .main-nav__link--bucket {
+    text-align: right;
+    &::before {
+      left: -20px;
+    }
   }
 }

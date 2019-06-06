@@ -115,3 +115,14 @@
     color: rgba($color: #fff, $alpha: 0.5);
   }
 }
+
+@media (min-width: 768px) {
+  .header {
+    padding-top: 80px;
+  }
+  .header__top {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: auto;
+  }
+}

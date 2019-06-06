@@ -1,0 +1,12 @@
+.free-shipping {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .free-shipping {
+    display: block;
+    position: absolute;
+    top: 115%;
+    right: 50px;
+  }
+}
