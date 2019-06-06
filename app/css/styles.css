@@ -324,7 +324,13 @@ body {
 h1 {
   font-size: 2.7rem;
   font-weight: bold;
-  line-height: 1.11; }
+  line-height: 1.11;
+  color: #000; }
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 4.3rem;
+    line-height: 1.17; } }
 
 .page-wrapper {
   position: relative;
@@ -452,9 +458,23 @@ h1 {
   .header {
     padding-top: 80px; }
   .header__top {
+    position: absolute;
     padding-top: 0px;
     padding-bottom: 0px;
-    height: auto; } }
+    height: auto; }
+  .header__content {
+    position: relative;
+    min-height: 630px;
+    background: url(../images/header/hero-desktop.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover; }
+  .header__title {
+    width: 14em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); } }
 
 .logo {
   text-align: center; }
