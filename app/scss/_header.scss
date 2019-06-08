@@ -141,4 +141,22 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+  .header__button-wrap {
+    position: relative;
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    &::after {
+      display: block;
+      position: absolute;
+      left: 0px;
+      bottom: -15px;
+      width: 100%;
+      height: 25px;
+      content: "";
+      background-image: url(../images/header/zigzag-fill-desktop.svg);
+      background-repeat: repeat-x;
+    }
+  }
 }
