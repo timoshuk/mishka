@@ -354,20 +354,29 @@ h1 {
     padding-right: 50px; } }
 
 .block-title {
-  font-family: "Open Sans", sans-serif;
   font-size: 2.5rem;
   font-weight: bold;
   line-height: 1.2;
   margin-bottom: 0.6em;
   color: #000; }
 
+@media (min-width: 768px) {
+  .block-title {
+    font-size: 4.3rem;
+    line-height: 1.16; } }
+
 .block-subtitle {
-  font-family: "Open Sans", sans-serif;
   font-weight: bold;
   color: #63d1bb;
   font-size: 1.7rem;
   line-height: 1.2;
   text-transform: uppercase; }
+
+@media (min-width: 768px) {
+  .block-subtitle {
+    max-width: 85px;
+    text-align: center;
+    line-height: 1; } }
 
 .header {
   padding-top: 90px; }
@@ -404,7 +413,8 @@ h1 {
   padding-left: 30px;
   padding-right: 30px;
   border: none;
-  outline: none; }
+  outline: none;
+  cursor: pointer; }
   .header__button span {
     display: block;
     width: 130px;
@@ -742,12 +752,22 @@ h1 {
 
 .goods__description {
   text-align: left;
-  font-family: "Open Sans", sans-serif;
   color: #444;
   font-size: 1.5rem;
   line-height: 1.6;
   font-weight: normal;
   margin-bottom: 35px; }
+
+@media (min-width: 768px) {
+  .goods {
+    padding-top: 56px; }
+  h2.goods__title {
+    margin-bottom: 0; }
+  .goods__titles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px; } }
 
 .price-table {
   border-collapse: collapse;
@@ -762,7 +782,8 @@ h1 {
 
 .order {
   position: relative;
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 165px; }
 
 .order__img-wrap {
   position: relative;
@@ -779,12 +800,35 @@ h1 {
     -o-object-fit: cover;
        object-fit: cover; }
 
+.order__check {
+  position: absolute;
+  left: 0;
+  bottom: 40px;
+  width: 100%; }
+
 .order__price {
   font-size: 1.7rem;
   line-height: 1.4;
   font-weight: bold;
   color: #444;
   margin-bottom: 28px; }
+
+@media (min-width: 768px) {
+  .order {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 55px; }
+  .order__wrap {
+    max-width: 290px;
+    margin-right: 45px; }
+  .order__check {
+    position: relative;
+    left: initial;
+    bottom: initial; }
+  .order__img-wrap {
+    flex-shrink: 0;
+    width: 50%;
+    height: 400px; } }
 
 .btn {
   font-family: "Open Sans", sans-serif;

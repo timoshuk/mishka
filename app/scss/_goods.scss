@@ -13,10 +13,26 @@
 
 .goods__description {
   text-align: left;
-  font-family: "Open Sans", sans-serif;
   color: #444;
   font-size: 1.5rem;
   line-height: 1.6;
   font-weight: normal;
   margin-bottom: 35px;
+}
+
+@media (min-width: 768px) {
+  .goods {
+    padding-top: 56px;
+  }
+
+  h2.goods__title {
+    margin-bottom: 0;
+  }
+
+  .goods__titles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+  }
 }

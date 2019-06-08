@@ -1,6 +1,7 @@
 .order {
   position: relative;
   text-align: center;
+  padding-bottom: 165px;
 }
 
 .order__img-wrap {
@@ -21,10 +22,40 @@
   }
 }
 
+.order__check {
+  position: absolute;
+  left: 0;
+  bottom: 40px;
+  width: 100%;
+}
+
 .order__price {
   font-size: 1.7rem;
   line-height: 1.4;
   font-weight: bold;
   color: #444;
   margin-bottom: 28px;
+}
+
+@media (min-width: 768px) {
+  .order {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 55px;
+  }
+
+  .order__wrap {
+    max-width: 290px;
+    margin-right: 45px;
+  }
+  .order__check {
+    position: relative;
+    left: initial;
+    bottom: initial;
+  }
+  .order__img-wrap {
+    flex-shrink: 0;
+    width: 50%;
+    height: 400px;
+  }
 }
