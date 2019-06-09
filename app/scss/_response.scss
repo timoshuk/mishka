@@ -1,4 +1,5 @@
 .response {
+  position: relative;
   padding-bottom: 45px;
   margin-bottom: 40px;
   background: url(../images/goods/zigzag-line-desktop.svg);
@@ -54,12 +55,20 @@
 
 @media (min-width: 768px) {
   .response {
-    padding-bottom: 75px;
+    padding-top: 90px;
+    padding-bottom: 120px;
     margin-bottom: 60px;
     background: url(../images/response/review.jpg),
       url(../images/goods/zigzag-line-desktop.svg);
     background-repeat: no-repeat, repeat-x;
     background-position: left top, bottom;
+
+    & .response__sent {
+      position: absolute;
+      top: 85px;
+      right: 50px;
+      max-width: 180px;
+    }
   }
 
   .response__item .txt {

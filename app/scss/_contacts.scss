@@ -60,6 +60,11 @@
 @media (min-width: 768px) {
   .contacts {
     margin-bottom: 60px;
+    & .btn {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 335px;
+    }
   }
   .contacts__data {
     margin-bottom: 20px;
