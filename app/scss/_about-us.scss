@@ -1,6 +1,8 @@
+.about-us {
+  margin-bottom: 60px;
+}
 .about-us__list {
   list-style: none;
-  margin-bottom: 60px;
 }
 
 .about-us__item {
@@ -21,4 +23,23 @@
   font-size: 1.7rem;
   line-height: 1.18;
   font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .about-us {
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+  }
+  .about-us__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    about-us__item {
+      max-width: 300px;
+    }
+  }
 }

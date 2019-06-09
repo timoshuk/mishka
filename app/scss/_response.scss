@@ -51,3 +51,29 @@
     }
   }
 }
+
+@media (min-width: 768px) {
+  .response {
+    padding-bottom: 75px;
+    margin-bottom: 60px;
+    background: url(../images/response/review.jpg),
+      url(../images/goods/zigzag-line-desktop.svg);
+    background-repeat: no-repeat, repeat-x;
+    background-position: left top, bottom;
+  }
+
+  .response__item .txt {
+    font-size: 1.7rem;
+    line-height: 1.76;
+    font-weight: 500;
+    margin-bottom: 70px;
+  }
+
+  .response__buttons {
+    float: right;
+    width: 170px;
+    & .btn {
+      border: none;
+    }
+  }
+}

@@ -363,7 +363,8 @@ h1 {
 @media (min-width: 768px) {
   .block-title {
     font-size: 4.3rem;
-    line-height: 1.16; } }
+    line-height: 1.16;
+    margin-bottom: 60px; } }
 
 .block-subtitle {
   font-weight: bold;
@@ -535,7 +536,9 @@ h1 {
             transform: translateY(-50%); }
   .logo__link {
     width: 115px;
-    height: 50px; } }
+    height: 50px; }
+  .logo--footer {
+    display: block; } }
 
 .main-nav {
   position: fixed;
@@ -697,7 +700,9 @@ h1 {
       left: -20px; } }
 
 .contacts {
-  overflow: hidden;
+  margin-bottom: 40px; }
+
+.contacts__data {
   margin-bottom: 40px; }
 
 .contacts__list {
@@ -705,11 +710,12 @@ h1 {
 
 .contacts__item {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin-bottom: 40px; }
   .contacts__item .contacts__name,
   .contacts__item .contacts__mail,
   .contacts__item .contacts__address {
+    margin-right: 30px;
     font-size: 1.5rem;
     font-weight: normal;
     line-height: 2em;
@@ -739,6 +745,35 @@ h1 {
     bottom: 0;
     width: 100%; }
 
+@media (min-width: 768px) {
+  .contacts {
+    margin-bottom: 60px; }
+  .contacts__data {
+    margin-bottom: 20px; }
+    .contacts__data .block-title {
+      position: relative; }
+      .contacts__data .block-title::after {
+        display: block;
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 0;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+        width: 50px;
+        height: 80px;
+        background-image: url(../images/contacts/flag.svg);
+        background-repeat: no-repeat;
+        background-size: cover; }
+  .contacts__list {
+    display: flex;
+    align-items: flex-start; }
+  .contacts__item {
+    margin-right: 40px;
+    flex-shrink: 0; }
+  .contacts__map {
+    margin-bottom: 60px; } }
+
 .goods {
   padding-top: 35px;
   padding-bottom: 35px;
@@ -760,7 +795,8 @@ h1 {
 
 @media (min-width: 768px) {
   .goods {
-    padding-top: 56px; }
+    padding-top: 56px;
+    margin-bottom: 60px; }
   h2.goods__title {
     margin-bottom: 0; }
   .goods__titles {
@@ -851,10 +887,16 @@ h1 {
     background: #444; }
   .btn:active {
     color: #7c7c7c; }
+  .btn--inline {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 335px; }
+
+.about-us {
+  margin-bottom: 60px; }
 
 .about-us__list {
-  list-style: none;
-  margin-bottom: 60px; }
+  list-style: none; }
 
 .about-us__item {
   margin-bottom: 30px;
@@ -872,6 +914,20 @@ h1 {
   font-size: 1.7rem;
   line-height: 1.18;
   font-weight: bold; }
+
+@media (min-width: 768px) {
+  .about-us {
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px; }
+  .about-us__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start; }
+    .about-us__list about-us__item {
+      max-width: 300px; } }
 
 .response {
   padding-bottom: 45px;
@@ -910,11 +966,38 @@ h1 {
     .response__buttons .btn:active svg {
       fill: #b2b2b2; }
 
+@media (min-width: 768px) {
+  .response {
+    padding-bottom: 75px;
+    margin-bottom: 60px;
+    background: url(../images/response/review.jpg), url(../images/goods/zigzag-line-desktop.svg);
+    background-repeat: no-repeat, repeat-x;
+    background-position: left top, bottom; }
+  .response__item .txt {
+    font-size: 1.7rem;
+    line-height: 1.76;
+    font-weight: 500;
+    margin-bottom: 70px; }
+  .response__buttons {
+    float: right;
+    width: 170px; }
+    .response__buttons .btn {
+      border: none; } }
+
 .footer {
   position: relative;
   width: 100%;
   min-height: 160px;
   background: #f1f1f1; }
+
+@media (min-width: 768px) {
+  .footer {
+    min-height: auto; }
+  .footer .container {
+    min-height: 143px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; } }
 
 .social {
   list-style: none;
@@ -939,6 +1022,10 @@ h1 {
       cursor: pointer; }
     .social__item .social__link:active {
       opacity: 0.5; }
+
+@media (min-width: 768px) {
+  .social {
+    border-bottom: none; } }
 
 .copyright {
   padding-top: 30px;
